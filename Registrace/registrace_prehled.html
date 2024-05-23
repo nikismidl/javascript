@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="registrace.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrace přehled</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="registrace.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-md-2"></div>
+       <div class="col-md-8">
+         <h1>Registrace - přehled</h1>
+         <table class="table table-striped">
+           <thead>
+             <tr>
+               <th scope="row">Klíč</th>
+               <th scope="row">Hodnota</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td>Jméno</td>
+               <td id="name_td"><script>document.write(name)</script></td>
+             </tr>
+             <tr>
+               <td>Příjmení</td>
+               <td id="name2_td"><script>document.write(name2)</script></td>
+             </tr>
+             <tr>
+               <td>Pohlaví</td>
+               <td id="sex_td"><script>document.write(sex)</script></td>
+             </tr>
+             <tr>
+               <td>Ulice</td>
+               <td id="address_td"><script>document.write(address)</script></td>
+             </tr>
+             <tr>
+               <td>Město</td>
+               <td id="city_td"><script>document.write(city)</script></td>
+             </tr>
+             <tr>
+               <td>Stát</td>
+               <td id="state_td"><script>document.write(state)</script></td>
+             </tr>
+             <tr>
+               <td>Telefon</td>
+               <td id="tel_td"><script>document.write(tel)</script></td>
+             </tr>
+           </tbody> 
+         </table>
+         <form>
+          <fieldset>
+            <legend></legend>
+            <div class="form-group">
+              <label class="col-md-4 control-label" for="submit"></label>
+              <div class="col-md-4">
+                <button type="submit" id="submit" name="submit"  onclick="alert('Odesláno.'); return false;" class="btn btn-primary">Odeslat</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+       </div>
+      <div class="col-md-2"></div>
+    </div>
+
+  </body>
+</html>

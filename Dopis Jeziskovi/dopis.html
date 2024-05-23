@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dopis Ježíškovi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="dopis.css">
+  </head>
+  <body>
+    <div class="container">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1>Dopis Ježíškovi</h1>
+      <form class="form-horizontal" action="dopis_odeslano.html" method="get">
+        <fieldset>
+        <legend></legend>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Jak se jmenuješ?</label>
+          <div class="col-md-4">
+          <input id="name" name="name" type="text" placeholder="Jméno" class="form-control input-md" required="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="age">Kolik je ti let?</label>
+          <div class="col-md-4">
+          <input id="age" name="age" type="text" placeholder="Věk" class="form-control input-md" required="">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="sex">Jsi</label>
+          <div class="col-md-4">
+          <div class="radio">
+            <label for="sex-0">
+              <input type="radio" name="sex" id="sex-0" value="0" checked="checked">
+              Chlapec
+            </label>
+        	</div>
+          <div class="radio">
+            <label for="sex-1">
+              <input type="radio" name="sex" id="sex-1" value="1">
+              Děvče
+            </label>
+        	</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="behavior">Byl/a jsi..</label>
+          <div class="col-md-4">
+          <div class="radio">
+            <label for="behavior-0">
+              <input type="radio" name="behavior" id="behavior-0" value="0" checked="checked">
+              Hodně hodný/á
+            </label>
+        	</div>
+          <div class="radio">
+            <label for="behavior-1">
+              <input type="radio" name="behavior" id="behavior-1" value="1">
+              Hodný/á
+            </label>
+        	</div>
+          <div class="radio">
+            <label for="behavior-2">
+              <input type="radio" name="behavior" id="behavior-2" value="2">
+              Zlobivý/á
+            </label>
+        	</div>
+          <div class="radio">
+            <label for="behavior-3">
+              <input type="radio" name="behavior" id="behavior-3" value="3">
+              Hodně zlobivý/á
+            </label>
+        	</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="wishes">Co si přeješ dostat?</label>
+          <div class="col-md-4">
+            <textarea class="form-control" id="wishes" name="wishes">Přeji si..</textarea>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="submit"></label>
+          <div class="col-md-4">
+            <button id="submit" name="submit" class="btn btn-primary">Napsat Ježíškovi</button>
+          </div>
+        </div>
+
+        </fieldset>
+    </form>
+
+    </div>
+    <div class="col-md-2"></div>
+    </div>
+
+  </body>
+</html>

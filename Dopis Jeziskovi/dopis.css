@@ -1,0 +1,41 @@
+body {
+  background-image: url("christmas2.jpg");
+  background-color: #cccccc;
+}
+h1 {
+  text-shadow: 3px 3px 4px #630000;
+  color: #EEEBDD;
+  text-align: center
+}
+pre {
+  color: #630000;
+  background-color: #EEEBDD;
+}
+p {
+  margin-top: 1em;
+}
+form {
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+.btn-primary {
+  background-color: #FFF;
+  color: #630000;
+  border-color: #630000;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #810000;
+  color: #FFF;
+  border-color: #810000;
+}
+div.letter {
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  margin-top: 1em;
+  padding: 1em;
+  font-size: 150%;
+}

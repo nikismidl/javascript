@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Stavební spoření se státním příspěvkem</title>
+    <link rel="stylesheet" href="test4.css">
+    <script src="test4.js"></script>
+</head>
+<body>
+    <header>Stavební spoření se státním příspěvkem</header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <div class="menu">
+                    <h3>
+                        Menu
+                    </h3>
+                    <button type="button" id="show" name="text" class="btn btn-primary" onclick="location.href='informace4.html';"> Informace </button>
+                    <br><br>
+                    <button type="button" id="add" name="calculate" class="btn btn-primary" onclick="location.href='vypocet4.html';"> Výpočet </button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <h4>Výpočet</h4>
+        <div class="text">
+            <label for="podpora_id">Zvolte, podle kterého předpisu výpočet chcete:</label>
+            <br>
+            <select name="podpora" id="podpora_id">
+                <option value="15">Podle starého</option>
+                <option value="10"> Podle nového</option>
+            </select>
+            <br><br>
+            <label for="prispevek_id">Zadejte roční příspěvek: </label>
+            <br>
+            <input type="number" name="prispevek_name" id="prispevek_id">
+            <br><br>
+            <label for="sazba_id">Zadejte úrokovou sazbu v procentech: </label>
+            <br>
+            <input type="number" name="sazba_name" id="sazba_id">
+            <br>
+        </div>
+        <br>
+        <div class="submit">
+            <button type="button" onclick="calc();">Vypočítat</button>
+        </div>
+        <br><br><br>
+        <div class="vysledek">
+            <p>Naspořená částka: </p>
+            <input type="text" name="nasporeno_name" id="nasporeno_id" placeholder="" disabled>
+        </div>
+    </article>
+</body>
+</html>

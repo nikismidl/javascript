@@ -1,0 +1,26 @@
+body {
+  background-color: #F2F1E7;
+}
+h1 {
+  color: #5C4D4D;
+  text-align: center
+}
+pre {
+  color: #915B4A;
+  background-color: #F2F1E7;
+}
+p {
+  margin-top: 1em;
+}
+.btn-primary {
+  background-color: #5C4D4D;
+  color: #F2F1E7;
+  border-color: #5C4D4D;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #5C4D4D;
+  color: #F2F1E7;
+  border-color: #5C4D4D;
+}

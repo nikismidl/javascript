@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Výpočet životního minima</title>
+    <link rel="stylesheet" href="test2.css">
+    <script src="test2.js"></script>
+</head>
+<body>
+    <header>Výpočet životního minima</header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <div class="menu">
+                    <h3>
+                        Menu
+                    </h3>
+                    <button type="button" id="show" name="text" class="btn btn-primary" onclick="location.href='informace.html';"> Informace </button>
+                    <br><br>
+                    <button type="button" id="add" name="calculate" class="btn btn-primary" onclick="location.href='vypocet.html';"> Výpočet </button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <h4>Výpočet</h4>
+        <div class="text">
+            <label for="adults_id">Dospělí: </label>
+            <br>
+            <input type="number" min="0" name="adults" id="adults_id" oninput="validity.valid||(value='');">
+            <br><br>
+            <label for="kids1">Dítě do 6 let: </label>
+            <br>
+            <input type="number" min="0" name="kids_1" id="kids1" oninput="validity.valid||(value='');">
+            <br><br>
+            <label for="kids2">Dítě 6 - 15 let: </label>
+            <br>
+            <input type="number" min="0" name="kids_2" id="kids2" oninput="validity.valid||(value='');">
+            <br><br>
+            <label for="kids3">Dítě 15 - 26 let: </label>
+            <br>
+            <input type="number" min="0" name="kids_3" id="kids3" oninput="validity.valid||(value='');">
+        </div>
+        <br>
+        <div class="submit">
+            <button type="button" onclick="calc();">Vypočítat</button>
+        </div>
+        <br><br><br>
+        <div class="vysledek">
+            <h5>Výsledek: </h5>
+            <input type="text" name="result" id="result_id" placeholder="" disabled>
+        </div>
+    </article>
+</body>
+</html>

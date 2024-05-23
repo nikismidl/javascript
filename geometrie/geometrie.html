@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+  <link rel="stylesheet" type="text/css" href="geometrie.css">
+  <title>Geometrické výpočty</title>
+  <script src="geometrie.js"></script>
+</head>
+
+<body>
+  <h1>Geometrické výpočty obdélníka</h1>
+  <div class="error" id="error"></div>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          <div class="side_a">
+            <form>
+              Strana <i>a</i>
+              <p>
+              <input title="Strana A" type="number" id="a">
+            </form>
+          </div>
+        </td>
+        <td>
+          <div class="circumference ">
+            <form>
+              Obvod <i>o</i>
+              <p>
+              <input title="Obvod" type="number" id="o">
+            </form>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="side_b">
+            <form>
+              Strana <i>b</i>
+              <p>
+              <input title="Strana B" type="number" id="b">
+            </form>
+          </div>
+        </td>
+        <td>
+          <div class="area">
+            <form>
+              Obsah <i>S</i>
+              <p>
+              <input title="Obsah" type="number" id="s">
+            </form>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="button">
+    <button onclick="reset(); return false;">Reset</button>
+    <button onclick="calculate(); return false;">Vypočítat</button>
+  </div>
+  <div class="picture">
+    <img src="obrazek.png">
+  </div>
+</body>
+</html>
